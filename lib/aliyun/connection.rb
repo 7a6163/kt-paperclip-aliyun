@@ -192,7 +192,10 @@ module Aliyun
     # @param path [String] the path to retrieve the file on remote storage
     # @return [String] the expected full path, e.g. "http://martin-test.oss-cn-hangzhou.aliyuncs.com/oss-api.pdf"
     def path_to_url(path)
-      URI.encode(path =~ %r{^https?://} ? path : "http://#{aliyun_upload_host}/#{path}")
+      url = path =~ %r{^https?://} ? path : "http://#{aliyun_upload_host}/#{path}"
+      # URI.encode is deprecated in Ruby 2.7 and removed in Ruby 3.0
+      # Use URI::DEFAULT_PARSER.escape for Ruby 3 compatibility
+      URI::DEFAULT_PARSER.escape(url)
     end
 
     private

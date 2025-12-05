@@ -1,10 +1,17 @@
 [![Coverage Status](https://coveralls.io/repos/github/Martin91/paperclip-storage-aliyun/badge.svg?branch=master)](https://coveralls.io/github/Martin91/paperclip-storage-aliyun?branch=master)
-[![Build Status](https://travis-ci.com/Martin91/paperclip-storage-aliyun.svg?branch=master)](https://travis-ci.com/Martin91/paperclip-storage-aliyun)
+[![Ruby](https://github.com/Martin91/paperclip-storage-aliyun/actions/workflows/ruby.yml/badge.svg)](https://github.com/Martin91/paperclip-storage-aliyun/actions/workflows/ruby.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/13caf32428dac403810e/maintainability)](https://codeclimate.com/github/Martin91/paperclip-storage-aliyun/maintainability)
 
 Aliyun Open Storage Service for Paperclip
 ===
 This gem implement the support for [Aliyun open storage service(OSS)](http://oss.aliyun.com) to [Paperclip](https://github.com/thoughtbot/paperclip).
+
+#### Ruby Version Support
+- Ruby 2.7+
+- Ruby 3.0+
+- Ruby 3.1+
+- Ruby 3.2+
+- Ruby 3.3+
 
 #### Installation
 ```shell

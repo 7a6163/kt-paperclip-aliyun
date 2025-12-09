@@ -2,11 +2,12 @@ require 'simplecov'
 SimpleCov.start do
   add_filter '/spec/'
   add_filter '/vendor/'
-end
 
-if ENV['CI']
-  require 'codecov'
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  # In CI, generate XML format for codecov-action to upload
+  if ENV['CI']
+    require 'simplecov-cobertura'
+    formatter SimpleCov::Formatter::CoberturaFormatter
+  end
 end
 
 require 'pry'

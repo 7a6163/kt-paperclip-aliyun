@@ -14,6 +14,6 @@ group :test do
   gem 'pry'
   gem 'pry-nav'
   gem 'simplecov', require: false
-  gem 'codecov', require: false
+  gem 'simplecov-cobertura', require: false
   gem 'webmock', '~> 3.0'
 end

@@ -34,3 +34,4 @@ jobs:
         token: ${{ secrets.CODECOV_TOKEN }}
         files: ./coverage/coverage.xml
         fail_ci_if_error: false
+      if: matrix.ruby-version == '3.3'

@@ -2,9 +2,9 @@
 [![codecov](https://codecov.io/gh/7a6163/kt-paperclip-aliyun/branch/master/graph/badge.svg)](https://codecov.io/gh/7a6163/kt-paperclip-aliyun)
 [![Gem Version](https://badge.fury.io/rb/kt-paperclip-aliyun.svg)](https://badge.fury.io/rb/kt-paperclip-aliyun)
 
-Aliyun Open Storage Service for Paperclip
+Aliyun OSS Storage for kt-paperclip
 ===
-This gem implement the support for [Aliyun open storage service(OSS)](http://oss.aliyun.com) to [Paperclip](https://github.com/thoughtbot/paperclip).
+This gem implements Aliyun OSS (Object Storage Service) support for [kt-paperclip](https://github.com/kreeti/kt-paperclip), a maintained fork of the popular Paperclip gem.
 
 #### Ruby Version Support
 - Ruby 2.7+
@@ -27,7 +27,7 @@ In order to make all the things work, you should do some important configuration
 
 If you are developing a Rails application, you can append a new initializer like:
 ```ruby
-# [rails_root]/config/initializers/paperclip-aliyun-configuration.rb
+# [rails_root]/config/initializers/kt-paperclip-aliyun.rb
 Paperclip::Attachment.default_options[:aliyun] = {
   access_id: '3VL9XMho8iCushj8',
   access_key: 'VAUI2q7Tc6yTh1jr3kBsEUzZ84gEa2',

@@ -2,3 +2,7 @@ Gemfile.lock
 .yardoc/
 doc/
 coverage/
+vendor/bundle/
+.bundle/
+*.gem
+

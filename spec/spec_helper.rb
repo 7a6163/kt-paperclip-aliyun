@@ -1,9 +1,18 @@
-require 'coveralls'
-Coveralls.wear!
+require 'simplecov'
+SimpleCov.start do
+  add_filter '/spec/'
+  add_filter '/vendor/'
+
+  # In CI, generate XML format for codecov-action to upload
+  if ENV['CI']
+    require 'simplecov-cobertura'
+    formatter SimpleCov::Formatter::CoberturaFormatter
+  end
+end
 
 require 'pry'
 require 'pry-nav'
-require 'paperclip-storage-aliyun'
+require 'kt-paperclip-aliyun'
 
 Paperclip.logger.level = ::Logger::UNKNOWN
 Dir[Bundler.root.join('spec/support/**/*.rb')].each(&method(:require))

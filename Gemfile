@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gemspec
 
+group :development do
+  gem 'rake'
+end
+
 group :test do
   gem 'activerecord', '>= 5.0'
   # A database backend that translates database interactions into no-ops. Using

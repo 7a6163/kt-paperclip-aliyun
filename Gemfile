@@ -13,6 +13,7 @@ group :test do
   gem 'rubocop', '~> 1.0'
   gem 'pry'
   gem 'pry-nav'
-  gem 'coveralls', require: false
+  gem 'simplecov', require: false
+  gem 'codecov', require: false
   gem 'webmock', '~> 3.0'
 end

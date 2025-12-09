@@ -1,6 +1,6 @@
-[![Coverage Status](https://coveralls.io/repos/github/Martin91/paperclip-storage-aliyun/badge.svg?branch=master)](https://coveralls.io/github/Martin91/paperclip-storage-aliyun?branch=master)
-[![Ruby](https://github.com/Martin91/paperclip-storage-aliyun/actions/workflows/ruby.yml/badge.svg)](https://github.com/Martin91/paperclip-storage-aliyun/actions/workflows/ruby.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/13caf32428dac403810e/maintainability)](https://codeclimate.com/github/Martin91/paperclip-storage-aliyun/maintainability)
+[![Ruby](https://github.com/7a6163/kt-paperclip-aliyun/actions/workflows/ruby.yml/badge.svg)](https://github.com/7a6163/kt-paperclip-aliyun/actions/workflows/ruby.yml)
+[![codecov](https://codecov.io/gh/7a6163/kt-paperclip-aliyun/branch/master/graph/badge.svg)](https://codecov.io/gh/7a6163/kt-paperclip-aliyun)
+[![Gem Version](https://badge.fury.io/rb/kt-paperclip-aliyun.svg)](https://badge.fury.io/rb/kt-paperclip-aliyun)
 
 Aliyun Open Storage Service for Paperclip
 ===
@@ -15,11 +15,11 @@ This gem implement the support for [Aliyun open storage service(OSS)](http://oss
 
 #### Installation
 ```shell
-gem install paperclip-storage-aliyun
+gem install kt-paperclip-aliyun
 ```
 Or, if you are using a bundler, you can append the following line into your **Gemfile**:
 ```ruby
-gem 'paperclip-storage-aliyun'
+gem 'kt-paperclip-aliyun'
 ```
 
 #### Configuration

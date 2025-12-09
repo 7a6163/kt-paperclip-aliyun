@@ -1,9 +1,17 @@
-require 'coveralls'
-Coveralls.wear!
+require 'simplecov'
+SimpleCov.start do
+  add_filter '/spec/'
+  add_filter '/vendor/'
+end
+
+if ENV['CI']
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
 
 require 'pry'
 require 'pry-nav'
-require 'paperclip-storage-aliyun'
+require 'kt-paperclip-aliyun'
 
 Paperclip.logger.level = ::Logger::UNKNOWN
 Dir[Bundler.root.join('spec/support/**/*.rb')].each(&method(:require))
